@@ -212,7 +212,7 @@ plot(fitted(fit), fit$residuals, xlab="Fitted Values",
      ylab="Residuals", main="Residual vs Fitted Plot")
 hist(fit$residuals, xlab="Residuals",main="Histogram of Resiudals")
 plot(fitted(fit), datafulltest$full_flights,
-     xlab="Fitted Values", ylab="Actual Values", main="Residual vs Actual Data Plot")
+     xlab="Fitted Values", ylab="Actual Values", main="Fitted vs Actual Data Plot")
 acf(fit$residuals, main="Autocorrelation plot of Residuals")
 
 #model fitting for ARIMA
@@ -261,7 +261,7 @@ plot(olm_flights$fitted.values, olm_flights$residuals, xlab="Fitted Values",
      ylab="Residuals", main="Residual vs Fitted Plot")
 hist(olm_flights$residuals, xlab="Residuals",main="Histogram of Resiudals")
 plot(olm_flights$fitted.values, datafulltest$full_flights[datafulltest$Period>=2001],
-     xlab="Fitted Values", ylab="Actual Values", main="Residual vs Actual Data Plot")
+     xlab="Fitted Values", ylab="Actual Values", main="Fitted vs Actual Data Plot")
 acf(olm_flights$residuals, main="Autocorrelation plot of Residuals")
 
 
